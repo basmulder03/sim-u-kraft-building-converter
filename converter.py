@@ -67,6 +67,8 @@ def create_nbt_file(file, typeid):
 
     typeid = TAG_Int(name='typeID', value=typeid)
 
+    inner_name = name
+
     if "pkid" in name:
         inner_name = name.split("-")[1]
 
