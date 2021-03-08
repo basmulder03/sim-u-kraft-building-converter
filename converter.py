@@ -59,9 +59,19 @@ def check_if_block_exists(block_id):
 
 
 def create_nbt_file(file, typeid):
+
     name = file.split(".")[0]
+
     name = name.replace(" ", "_")
+    name = name.replace(" ", "_")
+    name = name.replace("&", "")
+    name = name.replace("!", "")
+    name = name.replace("(", "")
+    name = name.replace(")", "")
+    name = name.replace("+", "")
     name = name.lower()
+    if "pkid" in name:
+        name = name.split("-")[1]
 
     author = TAG_String(name="author", value="unknown")
 
@@ -69,8 +79,8 @@ def create_nbt_file(file, typeid):
 
     inner_name = name
 
-    if "pkid" in name:
-        inner_name = name.split("-")[1]
+    # if "pkid" in name:
+    #    inner_name = name.split("-")[1]
 
     name_nbt = TAG_String(name="name", value=inner_name)
     key_value_map = OrderedDict()
