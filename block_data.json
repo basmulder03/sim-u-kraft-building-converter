@@ -782,7 +782,7 @@
       }
     },
     "9": {
-      "name": "minecraft:minecraft:spruce_leaves",
+      "name": "minecraft:spruce_leaves",
       "properties": {
         "persistent": "true"
       }
@@ -1354,13 +1354,13 @@
     "0": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east"
       }
     },
     "1": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west"
       }
     },
     "2": {
@@ -1372,20 +1372,20 @@
     "3": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "north"
       }
     },
     "4": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "north",
+        "facing": "east",
         "half": "top"
       }
     },
     "5": {
       "name": "minecraft:stairs",
       "properties": {
-        "facing": "east",
+        "facing": "west",
         "half": "top"
       }
     },
@@ -1399,7 +1399,7 @@
     "7": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "west",
+        "facing": "north",
         "half": "top"
       }
     }
