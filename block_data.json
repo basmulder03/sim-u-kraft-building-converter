@@ -1354,38 +1354,38 @@
     "0": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "north"
       }
     },
     "1": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "south"
       }
     },
     "2": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "west"
       }
     },
     "3": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east"
       }
     },
     "4": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "east",
+        "facing": "north",
         "half": "top"
       }
     },
     "5": {
       "name": "minecraft:stairs",
       "properties": {
-        "facing": "west",
+        "facing": "east",
         "half": "top"
       }
     },
@@ -1399,7 +1399,7 @@
     "7": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "north",
+        "facing": "west",
         "half": "top"
       }
     }
@@ -1666,7 +1666,9 @@
       "properties": {
         "facing": "north",
         "hinge": "left",
-        "level": "bottom"
+        "half": "lower",
+		"open": "false",
+		"powered": "false"
       }
     },
     "1": {
@@ -1674,7 +1676,9 @@
       "properties": {
         "facing": "east",
         "hinge": "left",
-        "level": "bottom"
+        "half": "lower",
+		"open": "false",
+		"powered": "false"
       }
     },
     "10": {
@@ -1682,15 +1686,17 @@
       "properties": {
         "facing": "north",
         "hinge": "left",
-        "level": "bottom"
+        "half": "lower"
       }
     },
     "11": {
       "name": "minecraft:oak_door",
       "properties": {
         "facing": "west",
-        "half": "top",
-        "hinge": "left"
+        "half": "upper",
+        "hinge": "left",
+		"open": "false",
+		"powered": "false"
       }
     },
     "12": {
@@ -1702,7 +1708,9 @@
       "properties": {
         "facing": "north",
         "hinge": "left",
-        "level": "bottom"
+        "half": "lower",
+		"open": "false",
+		"powered": "false"
       }
     },
     "14": {
@@ -1714,7 +1722,9 @@
       "properties": {
         "facing": "west",
         "hinge": "right",
-        "level": "top"
+        "half": "upper",
+		"open": "false",
+		"powered": "false"
       }
     },
     "2": {
@@ -1722,7 +1732,9 @@
       "properties": {
         "facing": "south",
         "hinge": "left",
-        "level": "bottom"
+        "half": "lower",
+		"open": "false",
+		"powered": "false"
       }
     },
     "3": {
@@ -1730,7 +1742,9 @@
       "properties": {
         "facing": "west",
         "half": "lower",
-        "hinge": "left"
+        "hinge": "left",
+		"open": "false",
+		"powered": "false"
       }
     },
     "4": {
@@ -1742,7 +1756,9 @@
       "properties": {
         "facing": "east",
         "hinge": "left",
-        "level": "top"
+        "half": "upper",
+		"open": "false",
+		"powered": "false"
       }
     },
     "6": {
@@ -1754,7 +1770,9 @@
       "properties": {
         "facing": "west",
         "hinge": "right",
-        "level": "bottom"
+        "half": "lower",
+		"open": "false",
+		"powered": "false"
       }
     },
     "8": {
@@ -1762,7 +1780,9 @@
       "properties": {
         "facing": "north",
         "hinge": "right",
-        "level": "bottom"
+        "half": "lower",
+		"open": "false",
+		"powered": "false"
       }
     },
     "9": {
@@ -1770,7 +1790,9 @@
       "properties": {
         "facing": "south",
         "hinge": "right",
-        "level": "top"
+        "half": "upper",
+		"open": "false",
+		"powered": "false"
       }
     }
   },
