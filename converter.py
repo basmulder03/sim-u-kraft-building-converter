@@ -1,7 +1,7 @@
 from nbt.nbt import *
 import json
 from collections import OrderedDict
-from os import path, makedirs
+from os import path, makedirs, system, name as osType, remove
 from glob import glob
 import clipboard
 import traceback
@@ -73,8 +73,21 @@ def get_data_for_new_block(which_block_to_get_data_for):
         prop_value = input("What is the value of the property " + prop_name + "? ")
         # add the property to the dictionary
         properties[prop_name] = prop_value
+
+    # clear the console to prevent cluttering
+    clear()
+
     # add the block to the json file
     return add_block_to_json({block: {subtype:{"name":name, "properties": properties}}})
+
+# method to clear to console
+def clear():
+    # check if the os name is nt (window)
+    if osType == 'nt':
+        _ = system('cls')
+    # else the os name is posix (macOs and Linux)
+    else:
+        _ = system('clear')
 
 # check if the block exists currently in the json file
 def check_if_block_exists(block_id):
@@ -179,7 +192,6 @@ def create_nbt_file(file, typeid, output_path):
             block_data = check_if_block_exists(value)
             # create a key value pair on that key with the name value
             key_value_map[key] = block_data
-            print(f"added %s to the dict" % str(block_data))
         # if there is an error show a message
         except:
             traceback.format_exc()
@@ -199,7 +211,7 @@ def create_nbt_file(file, typeid, output_path):
         # check if the block has properties
         if value.hasProperties():
             # if that is the case set all the properties
-            properties_list = TAG_List(type=TAG_String, name="Properties")
+            properties_list = TAG_Compound(name="Properties")
 
             for key, value in value.properties.items():
                 properties_list.tags.append(TAG_String(name=key, value=value))
@@ -235,9 +247,9 @@ def create_nbt_file(file, typeid, output_path):
                         blocksinbuilding += 1
                 except:
                     # print the stacktrace
-                    # traceback.print_exc()
+                    traceback.print_exc()
                     # give a helpful message to the user 😁
-                    # print(str(curPart[xlist]) + " was not found, substituting with air.")
+                    print(str(curPart[xlist]) + " was not found, substituting with air.")
                     # get the index of an air block to substitute the not found
                     curIndex = int(list(key_value_map.keys()).index("A"))
                 # create a new compound tag
@@ -278,6 +290,9 @@ def create_nbt_file(file, typeid, output_path):
         typeid
 
     ])
+    if path.exists("{0}/{1}.nbt".format(output_path, name)):
+        remove("{0}/{1}.nbt".format(output_path, name))
+
     # create the nbt file
     nbtfile.write_file(filename="{0}/{1}.nbt".format(output_path, name))
 
@@ -292,6 +307,7 @@ path_to_new_files = input("Which path to output the nbt files at?: ")
 # create that new path if that path doesn't exists yet
 if not path.exists(f"./%s" % path_to_new_files):
     makedirs(f"./%s" % path_to_new_files)
+
 
 # ask for the typeid of the building
 typeid = int(input("What is the type id of the files in this folder? "))
