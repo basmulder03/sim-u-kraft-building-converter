@@ -53,9 +53,8 @@ def add_block_to_json(block_dict):
 # get the data for a new block
 def get_data_for_new_block(which_block_to_get_data_for):
     [block, subtype] = which_block_to_get_data_for.split(':')
-    print(f"/setblock ~1 ~1 ~ %s %s" % block, subtype)
     # create setblock command to get the block
-    clipboard.copy(f"/setblock ~1 ~1 ~ %s %s" % block, subtype)
+    clipboard.copy("/setblock ~1 ~1 ~ {0} {1}".format(block, subtype))
     # print the id of the block
     print("Create an alias for the block with the id: " + which_block_to_get_data_for)
     # give that block an name
@@ -110,7 +109,7 @@ def create_nbt_file(file, typeid, output_path):
     name = name.replace(")", "")
     name = name.replace("+", "")
     name = name.lower()
-    
+
     if "pkid" in name:
         name = name.split("-")[1]
 
@@ -236,9 +235,9 @@ def create_nbt_file(file, typeid, output_path):
                         blocksinbuilding += 1
                 except:
                     # print the stacktrace
-                    traceback.print_exc()
+                    # traceback.print_exc()
                     # give a helpful message to the user 😁
-                    print(str(curPart[xlist]) + " was not found, substituting with air.")
+                    # print(str(curPart[xlist]) + " was not found, substituting with air.")
                     # get the index of an air block to substitute the not found
                     curIndex = int(list(key_value_map.keys()).index("A"))
                 # create a new compound tag
@@ -294,11 +293,11 @@ path_to_new_files = input("Which path to output the nbt files at?: ")
 if not path.exists(f"./%s" % path_to_new_files):
     makedirs(f"./%s" % path_to_new_files)
 
-# show a messsage to say how many files have to be converted
-print("Converting " + str(len(files)) + " files")
-
 # ask for the typeid of the building
 typeid = int(input("What is the type id of the files in this folder? "))
+
+# show a messsage to say how many files have to be converted
+print("Converting " + str(len(files)) + " files")
 
 # create a local index
 index = 0
