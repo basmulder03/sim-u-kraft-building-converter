@@ -92,6 +92,7 @@ def check_if_block_exists(block_id):
     # return the properties of that block
     return BlockProperties(data['name'], data['properties'])
 
+
 # method to create a nbt file from the old txt file
 def create_nbt_file(file, typeid, output_path):
     if "\\" in file:
@@ -100,8 +101,18 @@ def create_nbt_file(file, typeid, output_path):
         file_data = file
     # get the new name of the file
     name = file_data.split(".")[0]
+
     name = name.replace(" ", "_")
+    name = name.replace(" ", "_")
+    name = name.replace("&", "")
+    name = name.replace("!", "")
+    name = name.replace("(", "")
+    name = name.replace(")", "")
+    name = name.replace("+", "")
     name = name.lower()
+    
+    if "pkid" in name:
+        name = name.split("-")[1]
 
     # make an author variabele and set the default to unknown
     author = TAG_String(name="author", value="unknown")
