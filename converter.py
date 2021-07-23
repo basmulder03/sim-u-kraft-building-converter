@@ -114,13 +114,12 @@ def create_nbt_file(file, typeid, output_path):
     # get the new name of the file
     name = file_data.split(".")[0]
 
-    name = name.replace(" ", "_")
-    name = name.replace(" ", "_")
     name = name.replace("&", "")
     name = name.replace("!", "")
     name = name.replace("(", "")
     name = name.replace(")", "")
     name = name.replace("+", "")
+    name = name.replace(" ", "_")
     name = name.lower()
 
     if "pkid" in name:
@@ -249,7 +248,7 @@ def create_nbt_file(file, typeid, output_path):
                     # print the stacktrace
                     traceback.print_exc()
                     # give a helpful message to the user 😁
-                    print(str(curPart[xlist]) + " was not found, substituting with air.")
+                    print(str(curPart) + " " + str(xlist) + " was not found, substituting with air.")
                     # get the index of an air block to substitute the not found
                     curIndex = int(list(key_value_map.keys()).index("A"))
                 # create a new compound tag
