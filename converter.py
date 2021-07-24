@@ -227,43 +227,46 @@ def create_nbt_file(file, typeid, output_path):
     # create a counter for the count of blocks inside the building
     blocksinbuilding = 0
 
-    # loop through all the different y levels of the building
-    for ylist in range(y):
-        # create a sublist of the line with the blocks of that y level
-        curList = blockLines[ylist]
-        # loop through all the blocks in the z direction
-        for zlist in range(z):
-            # get all the x values for the current z
-            curPart = curList[zlist * x:zlist * x + x]
+    try:
+        # loop through all the different y levels of the building
+        for ylist in range(y):
+            # create a sublist of the line with the blocks of that y level
+            curList = blockLines[ylist]
+            # loop through all the blocks in the z direction
+            for zlist in range(z):
+                # get all the x values for the current z
+                curPart = curList[zlist * x:zlist * x + x]
 
-            # loop through all the values inside the curPart sublist
-            for xlist in range(x):
-                try:
-                    # get the index of the position of the current block
-                    curIndex = int(list(key_value_map.keys()).index(curPart[xlist]))
-                    # if the letter of the block is not equals to A, add a block to the total block counter (A always has the value air assigned to it.)
-                    if not curPart[xlist] == "A":
-                        blocksinbuilding += 1
-                except:
-                    # print the stacktrace
-                    traceback.print_exc()
-                    # give a helpful message to the user 😁
-                    print(str(curPart) + " " + str(xlist) + " was not found, substituting with air.")
-                    # get the index of an air block to substitute the not found
-                    curIndex = int(list(key_value_map.keys()).index("A"))
-                # create a new compound tag
-                compound = TAG_Compound()
-                # create a position list for the compound tag
-                intList = TAG_List(name='pos', type=TAG_Int)
-                # set the position equals to the current x, y and z values
-                intList.tags.extend([TAG_Int(xlist),TAG_Int(ylist),TAG_Int(zlist)])
-                # add the position and the state (the position of the block state data) to the compound
-                compound.tags.extend([
-                    intList,
-                    TAG_Int(name='state', value=curIndex)
-                ])
-                # add the compound to the blocklist
-                blockList.tags.append(compound)
+                # loop through all the values inside the curPart sublist
+                for xlist in range(x):
+                    try:
+                        # get the index of the position of the current block
+                        curIndex = int(list(key_value_map.keys()).index(curPart[xlist]))
+                        # if the letter of the block is not equals to A, add a block to the total block counter (A always has the value air assigned to it.)
+                        if not curPart[xlist] == "A":
+                            blocksinbuilding += 1
+                    except:
+                        # print the stacktrace
+                        traceback.print_exc()
+                        # give a helpful message to the user 😁
+                        print(str(curPart) + " " + str(xlist) + " was not found, substituting with air.")
+                        # get the index of an air block to substitute the not found
+                        curIndex = int(list(key_value_map.keys()).index("A"))
+                    # create a new compound tag
+                    compound = TAG_Compound()
+                    # create a position list for the compound tag
+                    intList = TAG_List(name='pos', type=TAG_Int)
+                    # set the position equals to the current x, y and z values
+                    intList.tags.extend([TAG_Int(xlist),TAG_Int(ylist),TAG_Int(zlist)])
+                    # add the position and the state (the position of the block state data) to the compound
+                    compound.tags.extend([
+                        intList,
+                        TAG_Int(name='state', value=curIndex)
+                    ])
+                    # add the compound to the blocklist
+                    blockList.tags.append(compound)
+    except:
+        pass
 
     # calculate the cost and the rent of the buildings
     rent = blocksinbuilding * 0.01
