@@ -224,23 +224,35 @@
     },
     "12": {
       "name": "minecraft:vine",
-      "properties": {}
+      "properties": {
+        "east": "true",
+        "north": "true"
+      }
     },
     "2": {
       "name": "minecraft:vines",
-      "properties": {}
+      "properties": {
+        "west": "true"
+      }
     },
     "3": {
       "name": "minecraft:vine",
-      "properties": {}
+      "properties": {
+        "south": "true",
+        "west": "true"
+      }
     },
     "4": {
       "name": "minecraft:vines",
-      "properties": {}
+      "properties": {
+        "north": "true"
+      }
     },
     "8": {
       "name": "minecraft:vine",
-      "properties": {}
+      "properties": {
+        "east": "true"
+      }
     }
   },
   "107": {
@@ -595,7 +607,9 @@
     },
     "1": {
       "name": "minecraft:spruce_slab",
-      "properties": {}
+      "properties": {
+        "type": "bottom"
+      }
     },
     "10": {
       "name": "minecraft:birch_slab",
@@ -686,7 +700,9 @@
   "130": {
     "2": {
       "name": "minecraft:ender_chest",
-      "properties": {}
+      "properties": {
+        "facing": "north"
+      }
     },
     "3": {
       "name": "minecraft:ender_chest",
@@ -696,11 +712,15 @@
     },
     "4": {
       "name": "minecraft:ender_chest",
-      "properties": {}
+      "properties": {
+        "facing": "east"
+      }
     },
     "5": {
       "name": "minecraft:ender_chest",
-      "properties": {}
+      "properties": {
+        "facing": "west"
+      }
     }
   },
   "133": {
@@ -954,14 +974,26 @@
   },
   "143": {
     "0": {
-      "name": "minecraft:wooden_button",
-      "properties": {}
+      "name": "minecraft:oak_button",
+      "properties": {
+        "face": "ceiling",
+        "facing": "north"
+      }
+    },
+    "1": {
+      "name": "minecraft:oak_button",
+      "properties": {
+        "face": "wall",
+        "facing": "east"
+      }
     }
   },
   "144": {
     "1": {
       "name": "minecraft:skull",
-      "properties": {}
+      "properties": {
+        "rotation": "0"
+      }
     }
   },
   "145": {
@@ -1336,7 +1368,7 @@
   },
   "195": {
     "9": {
-      "name": "minecraft:jungle_door",
+      "name": "minecraft:placeholder",
       "properties": {}
     }
   },
@@ -1411,11 +1443,15 @@
   "23": {
     "2": {
       "name": "minecraft:dispenser",
-      "properties": {}
+      "properties": {
+        "facing": "north"
+      }
     },
     "4": {
       "name": "minecraft:dispenser",
-      "properties": {}
+      "properties": {
+        "facing": "east"
+      }
     }
   },
   "24": {
@@ -2289,48 +2325,86 @@
   "64": {
     "0": {
       "name": "minecraft:oak_door",
-      "properties": {}
-    },
-    "1": {
-      "name": "minecraft:oak_door",
-      "properties": {}
-    },
-    "10": {
-      "name": "minecraft:oak_door",
-      "properties": {}
-    },
-    "11": {
-      "name": "minecraft:oak_door",
       "properties": {
-        "facing": "north",
-        "half": "upper",
+        "facing": "east",
+        "half": "lower",
         "hinge": "right",
         "open": "false"
       }
     },
-    "12": {
+    "1": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "south",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
     },
-    "13": {
-      "name": "minecraft:oak_door",
-      "properties": {}
-    },
-    "14": {
-      "name": "minecraft:oak_door",
-      "properties": {}
-    },
-    "15": {
+    "10": {
       "name": "minecraft:oak_door",
       "properties": {
         "facing": "east",
         "half": "upper",
-        "hinge": "right"
+        "hinge": "left",
+        "open": "false",
+        "powered": "true"
+      }
+    },
+    "11": {
+      "name": "minecraft:oak_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false",
+        "powered": "true"
+      }
+    },
+    "12": {
+      "name": "minecraft:oak_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "13": {
+      "name": "minecraft:oak_door",
+      "properties": {
+        "facing": "south",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "14": {
+      "name": "minecraft:oak_door",
+      "properties": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "15": {
+      "name": "minecraft:oak_door",
+      "properties": {
+        "facing": "north",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
       }
     },
     "2": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
     },
     "3": {
       "name": "minecraft:oak_door",
@@ -2343,31 +2417,57 @@
     },
     "4": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "east",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "5": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "south",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "6": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "7": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "east",
-        "half": "bottom",
-        "hinge": "right"
+        "facing": "north",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
       }
     },
     "8": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false"
+      }
     },
     "9": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false"
+      }
     }
   },
   "65": {
@@ -2580,39 +2680,149 @@
   "71": {
     "0": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "east",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
     },
     "1": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "south",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
+    },
+    "10": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false",
+        "powered": "true"
+      }
     },
     "11": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false",
+        "powered": "true"
+      }
+    },
+    "12": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "13": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "south",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
     },
     "14": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "15": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "north",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
     },
     "2": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
     },
     "3": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "north",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
+    },
+    "4": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
+    },
+    "5": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "south",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "6": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
+    },
+    "7": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "north",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "8": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false"
+      }
     },
     "9": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false"
+      }
     }
   },
   "72": {
