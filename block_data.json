@@ -16,6 +16,10 @@
       "name": "minecraft:air",
       "properties": {}
     },
+    "14": {
+      "name": "minecraft:air",
+      "properties": {}
+    },
     "15": {
       "name": "minecraft:air",
       "properties": {}
@@ -25,7 +29,7 @@
       "properties": {}
     },
     "3": {
-      "name": "minecraft:air",
+      "name": "minecraft:ai",
       "properties": {}
     },
     "4": {
@@ -62,43 +66,113 @@
   "100": {
     "1": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "true",
+        "south": "false",
+        "up": "true",
+        "west": "true"
+      }
     },
     "10": {
-      "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "name": "minecraft:mushroom_stem",
+      "properties": {
+        "down": "false",
+        "east": "true",
+        "north": "true",
+        "south": "true",
+        "up": "false",
+        "west": "true"
+      }
     },
     "2": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "true",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "3": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "true",
+        "north": "true",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "4": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "true",
+        "west": "true"
+      }
     },
     "5": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "6": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "true",
+        "north": "false",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "7": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "true",
+        "up": "true",
+        "west": "true"
+      }
     },
     "8": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "true",
+        "up": "true",
+        "west": "false"
+      }
     },
     "9": {
       "name": "minecraft:red_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "true",
+        "north": "false",
+        "south": "true",
+        "up": "true",
+        "west": "false"
+      }
     }
   },
   "101": {
@@ -122,58 +196,62 @@
   "104": {
     "7": {
       "name": "minecraft:pumpkin_stem",
-      "properties": {}
+      "properties": {
+        "age": "7"
+      }
     }
   },
   "105": {
+    "6": {
+      "name": "minecraft:melon_stem",
+      "properties": {
+        "age": "6"
+      }
+    },
     "7": {
       "name": "minecraft:melon_stem",
-      "properties": {}
+      "properties": {
+        "age": "7"
+      }
     }
   },
   "106": {
     "1": {
-      "name": "minecraft:vine",
+      "name": "minecraft:vines",
       "properties": {
-        "east": "false",
-        "north": "true",
-        "south": "false",
-        "up": "false",
-        "west": "false"
+        "south": "true"
       }
     },
     "12": {
-      "name": "",
-      "properties": {}
-    },
-    "2": {
       "name": "minecraft:vine",
       "properties": {
-        "east": "false",
-        "north": "false",
+        "east": "true",
+        "north": "true"
+      }
+    },
+    "2": {
+      "name": "minecraft:vines",
+      "properties": {
+        "west": "true"
+      }
+    },
+    "3": {
+      "name": "minecraft:vine",
+      "properties": {
         "south": "true",
-        "up": "false",
-        "west": "false"
+        "west": "true"
       }
     },
     "4": {
-      "name": "minecraft:vine",
+      "name": "minecraft:vines",
       "properties": {
-        "east": "false",
-        "north": "false",
-        "south": "false",
-        "up": "true",
-        "west": "false"
+        "north": "true"
       }
     },
     "8": {
       "name": "minecraft:vine",
       "properties": {
-        "east": "false",
-        "north": "true",
-        "south": "false",
-        "up": "false",
-        "west": "false"
+        "east": "true"
       }
     }
   },
@@ -181,37 +259,57 @@
     "0": {
       "name": "minecraft:oak_fence_gate",
       "properties": {
-        "facing": "north"
+        "facing": "south",
+        "open": "false"
       }
     },
     "1": {
       "name": "minecraft:oak_fence_gate",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "open": "false"
       }
     },
     "2": {
       "name": "minecraft:oak_fence_gate",
-      "properties": {}
+      "properties": {
+        "facing": "north",
+        "open": "false"
+      }
     },
     "3": {
       "name": "minecraft:oak_fence_gate",
       "properties": {
-        "facing": "west"
+        "facing": "east",
+        "open": "false"
       }
     },
     "4": {
       "name": "minecraft:oak_fence_gate",
       "properties": {
+        "facing": "south",
+        "open": "true"
+      }
+    },
+    "5": {
+      "name": "minecraft:oak_fence_gate",
+      "properties": {
+        "facing": "west",
+        "open": "true"
+      }
+    },
+    "6": {
+      "name": "minecraft:oak_fence_gate",
+      "properties": {
         "facing": "north",
-        "in_wall": "true"
+        "open": "true"
       }
     },
     "7": {
       "name": "minecraft:oak_fence_gate",
       "properties": {
-        "facing": "west",
-        "in_wall": "true"
+        "facing": "east",
+        "open": "true"
       }
     }
   },
@@ -219,25 +317,57 @@
     "0": {
       "name": "minecraft:brick_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:brick_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:brick_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "south",
+        "half": "bottom"
       }
     },
     "3": {
       "name": "minecraft:brick_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "north",
+        "half": "bottom"
+      }
+    },
+    "4": {
+      "name": "minecraft:brick_stairs",
+      "properties": {
+        "facing": "east",
+        "half": "top"
+      }
+    },
+    "5": {
+      "name": "minecraft:brick_stairs",
+      "properties": {
+        "facing": "west",
+        "half": "top"
+      }
+    },
+    "6": {
+      "name": "minecraft:brick_stairs",
+      "properties": {
+        "facing": "south",
+        "half": "top"
+      }
+    },
+    "7": {
+      "name": "minecraft:brick_stairs",
+      "properties": {
+        "facing": "north",
+        "half": "top"
       }
     }
   },
@@ -245,38 +375,42 @@
     "0": {
       "name": "minecraft:stone_brick_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:stone_brick_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:stone_brick_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "south",
+        "half": "bottom"
       }
     },
     "3": {
       "name": "minecraft:stone_brick_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "north",
+        "half": "bottom"
       }
     },
     "4": {
       "name": "minecraft:stone_brick_stairs",
       "properties": {
-        "facing": "north",
+        "facing": "east",
         "half": "top"
       }
     },
     "5": {
       "name": "minecraft:stone_brick_stairs",
       "properties": {
-        "facing": "east",
+        "facing": "west",
         "half": "top"
       }
     },
@@ -290,7 +424,7 @@
     "7": {
       "name": "minecraft:stone_brick_stairs",
       "properties": {
-        "facing": "west",
+        "facing": "north",
         "half": "top"
       }
     }
@@ -298,10 +432,45 @@
   "11": {
     "0": {
       "name": "minecraft:lava",
-      "properties": {}
+      "properties": {
+        "falling": "false"
+      }
+    },
+    "10": {
+      "name": "minecraft:lava",
+      "properties": {
+        "falling": "true",
+        "level": "8"
+      }
+    },
+    "2": {
+      "name": "minecraft:lava",
+      "properties": {
+        "level": "6"
+      }
+    },
+    "4": {
+      "name": "minecraft:lava",
+      "properties": {
+        "level": "5"
+      }
+    },
+    "6": {
+      "name": "minecraft:lava",
+      "properties": {
+        "level": "3"
+      }
     },
     "8": {
       "name": "minecraft:lava",
+      "properties": {
+        "level": "1"
+      }
+    }
+  },
+  "111": {
+    "0": {
+      "name": "minecraft:waterlily",
       "properties": {}
     }
   },
@@ -313,27 +482,37 @@
   },
   "113": {
     "0": {
-      "name": "minecraft:nether_brick_fence",
+      "name": "minecraft:netherbrick_fence",
       "properties": {}
     }
   },
   "114": {
     "0": {
-      "name": "minecraft:nether_brick_stairs",
+      "name": "minecraft:netherbrick_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
-      "name": "minecraft:nether_brick_stairs",
+      "name": "minecraft:netherbrick_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
+      "name": "minecraft:netherbrick_stairs",
+      "properties": {
+        "facing": "south",
+        "half": "bottom"
+      }
+    },
+    "3": {
       "name": "minecraft:nether_brick_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "north",
+        "half": "bottom"
       }
     }
   },
@@ -344,15 +523,29 @@
     }
   },
   "117": {
+    "0": {
+      "name": "minecraft:brewing_stand",
+      "properties": {
+        "has_bottle_0": "false",
+        "has_bottle_1": "false",
+        "has_bottle_2": "false"
+      }
+    },
     "2": {
       "name": "minecraft:brewing_stand",
-      "properties": {}
+      "properties": {
+        "has_bottle_0": "true",
+        "has_bottle_1": "false",
+        "has_bottle_2": "false"
+      }
     }
   },
   "118": {
     "0": {
       "name": "minecraft:cauldron",
-      "properties": {}
+      "properties": {
+        "level": "0"
+      }
     },
     "3": {
       "name": "minecraft:cauldron",
@@ -367,6 +560,12 @@
       "properties": {}
     }
   },
+  "121": {
+    "0": {
+      "name": "minecraft:end_stone",
+      "properties": {}
+    }
+  },
   "123": {
     "0": {
       "name": "minecraft:redstone_lamp",
@@ -377,63 +576,118 @@
     "0": {
       "name": "minecraft:redstone_lamp",
       "properties": {
-        "lit": "false"
+        "lit": "true"
       }
     }
   },
   "125": {
     "0": {
-      "name": "minecraft:oak_slab",
-      "properties": {
-        "type": "double"
-      }
+      "name": "minecraft:oak_wood",
+      "properties": {}
+    },
+    "1": {
+      "name": "minecraft:spruce_wood",
+      "properties": {}
+    },
+    "2": {
+      "name": "minecraft:birch_wood",
+      "properties": {}
+    },
+    "3": {
+      "name": "minecraft:jungle_wood",
+      "properties": {}
     }
   },
   "126": {
     "0": {
       "name": "minecraft:oak_slab",
-      "properties": {}
-    },
-    "11": {
-      "name": "minecraft:dark_oak_slab",
       "properties": {
-        "type": "top"
+        "type": "bottom"
       }
     },
-    "3": {
-      "name": "minecraft:jungle_slab",
-      "properties": {}
+    "1": {
+      "name": "minecraft:spruce_slab",
+      "properties": {
+        "type": "bottom"
+      }
     },
-    "8": {
+    "10": {
       "name": "minecraft:birch_slab",
       "properties": {
         "type": "top"
       }
+    },
+    "11": {
+      "name": "minecraft:jungle_slab",
+      "properties": {
+        "type": "top"
+      }
+    },
+    "2": {
+      "name": "minecraft:birch_slab",
+      "properties": {
+        "type": "bottom"
+      }
+    },
+    "3": {
+      "name": "minecraft:jungle_slab",
+      "properties": {
+        "type": "bottom"
+      }
+    },
+    "8": {
+      "name": "minecraft:oak_slab",
+      "properties": {
+        "type": "top"
+      }
+    },
+    "9": {
+      "name": "minecraft:spruce_slab",
+      "properties": {
+        "type": "top"
+      }
+    }
+  },
+  "127": {
+    "0": {
+      "name": "minecraft:cocoa",
+      "properties": {}
     }
   },
   "128": {
     "0": {
       "name": "minecraft:sandstone_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:sandstone_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:sandstone_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "south",
+        "half": "bottom"
       }
     },
     "3": {
       "name": "minecraft:sandstone_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "north",
+        "half": "bottom"
+      }
+    },
+    "5": {
+      "name": "minecraft:birch_stairs",
+      "properties": {
+        "facing": "west",
+        "type": "top"
       }
     }
   },
@@ -441,6 +695,32 @@
     "0": {
       "name": "minecraft:gravel",
       "properties": {}
+    }
+  },
+  "130": {
+    "2": {
+      "name": "minecraft:ender_chest",
+      "properties": {
+        "facing": "north"
+      }
+    },
+    "3": {
+      "name": "minecraft:ender_chest",
+      "properties": {
+        "facing": "south"
+      }
+    },
+    "4": {
+      "name": "minecraft:ender_chest",
+      "properties": {
+        "facing": "east"
+      }
+    },
+    "5": {
+      "name": "minecraft:ender_chest",
+      "properties": {
+        "facing": "west"
+      }
     }
   },
   "133": {
@@ -453,32 +733,42 @@
     "0": {
       "name": "minecraft:spruce_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:spruce_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:spruce_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "south",
+        "half": "bottom"
+      }
+    },
+    "3": {
+      "name": "minecraft:spruce_stairs",
+      "properties": {
+        "facing": "north",
+        "half": "bottom"
       }
     },
     "4": {
       "name": "minecraft:spruce_stairs",
       "properties": {
-        "facing": "north",
+        "facing": "east",
         "half": "top"
       }
     },
     "5": {
       "name": "minecraft:spruce_stairs",
       "properties": {
-        "facing": "east",
+        "facing": "west",
         "half": "top"
       }
     },
@@ -492,7 +782,7 @@
     "7": {
       "name": "minecraft:spruce_stairs",
       "properties": {
-        "facing": "west",
+        "facing": "north",
         "half": "top"
       }
     }
@@ -501,7 +791,36 @@
     "0": {
       "name": "minecraft:birch_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
+      }
+    },
+    "1": {
+      "name": "minecraft:birch_stairs",
+      "properties": {
+        "facing": "west",
+        "half": "bottom"
+      }
+    },
+    "2": {
+      "name": "minecraft:birch_stairs",
+      "properties": {
+        "facing": "south",
+        "half": "bottom"
+      }
+    },
+    "3": {
+      "name": "minecraft:birch_stairs",
+      "properties": {
+        "facing": "north",
+        "half": "bottom"
+      }
+    },
+    "6": {
+      "name": "minecraft:birch_stairs",
+      "properties": {
+        "facing": "north",
+        "type": "top"
       }
     }
   },
@@ -509,39 +828,42 @@
     "0": {
       "name": "minecraft:jungle_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:jungle_stairs",
       "properties": {
-        "facing": "east",
+        "facing": "west",
         "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:jungle_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "south",
+        "half": "bottom"
       }
     },
     "3": {
       "name": "minecraft:jungle_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "north",
+        "half": "bottom"
       }
     },
     "4": {
       "name": "minecraft:jungle_stairs",
       "properties": {
-        "facing": "north",
+        "facing": "east",
         "half": "top"
       }
     },
     "5": {
       "name": "minecraft:jungle_stairs",
       "properties": {
-        "facing": "east",
+        "facing": "west",
         "half": "top"
       }
     },
@@ -555,9 +877,15 @@
     "7": {
       "name": "minecraft:jungle_stairs",
       "properties": {
-        "facing": "west",
+        "facing": "north",
         "half": "top"
       }
+    }
+  },
+  "138": {
+    "0": {
+      "name": "minecraft:beacon",
+      "properties": {}
     }
   },
   "139": {
@@ -573,26 +901,148 @@
     }
   },
   "140": {
-    "1": {
+    "0": {
       "name": "minecraft:flower_pot",
+      "properties": {}
+    },
+    "1": {
+      "name": "minecraft:potted_poppy",
       "properties": {}
     },
     "2": {
-      "name": "minecraft:flower_pot",
+      "name": "minecraft:potted_dandelion",
       "properties": {}
     },
     "3": {
+      "name": "minecraft:potted_oak_sapling",
+      "properties": {}
+    },
+    "4": {
+      "name": "minecraft:potted_spruce_sapling",
+      "properties": {}
+    },
+    "5": {
+      "name": "minecraft:potted_birch_sapling",
+      "properties": {}
+    },
+    "6": {
       "name": "minecraft:flower_pot",
       "properties": {}
     },
     "7": {
-      "name": "minecraft:flower_pot",
+      "name": "minecraft:potted_red_mushroom",
       "properties": {}
+    },
+    "8": {
+      "name": "minecraft:potted_brown_mushroom",
+      "properties": {}
+    },
+    "9": {
+      "name": "minecraft:potted_cactus",
+      "properties": {}
+    }
+  },
+  "141": {
+    "0": {
+      "name": "minecraft:carrots",
+      "properties": {}
+    },
+    "1": {
+      "name": "minecraft:carrots",
+      "properties": {
+        "age": "1"
+      }
+    },
+    "7": {
+      "name": "minecraft:carrots",
+      "properties": {
+        "age": "7"
+      }
+    }
+  },
+  "142": {
+    "0": {
+      "name": "minecraft:potatoes",
+      "properties": {}
+    },
+    "1": {
+      "name": "minecraft:potatoes",
+      "properties": {
+        "age": "1"
+      }
+    }
+  },
+  "143": {
+    "0": {
+      "name": "minecraft:oak_button",
+      "properties": {
+        "face": "ceiling",
+        "facing": "north"
+      }
+    },
+    "1": {
+      "name": "minecraft:oak_button",
+      "properties": {
+        "face": "wall",
+        "facing": "east"
+      }
+    }
+  },
+  "144": {
+    "1": {
+      "name": "minecraft:skull",
+      "properties": {
+        "rotation": "0"
+      }
     }
   },
   "145": {
     "0": {
       "name": "minecraft:anvil",
+      "properties": {
+        "facing": "south"
+      }
+    },
+    "1": {
+      "name": "minecraft:anvil",
+      "properties": {
+        "facing": "west"
+      }
+    },
+    "2": {
+      "name": "minecraft:anvil",
+      "properties": {
+        "facing": "north"
+      }
+    },
+    "3": {
+      "name": "minecraft:anvil",
+      "properties": {
+        "facing": "south"
+      }
+    }
+  },
+  "146": {
+    "2": {
+      "name": "minecraft:trapped_chest",
+      "properties": {
+        "facing": "south"
+      }
+    },
+    "3": {
+      "name": "minecraft:trapped_chest",
+      "properties": {
+        "facing": "south"
+      }
+    },
+    "5": {
+      "name": "minecraft:trapped_chest",
+      "properties": {}
+    }
+  },
+  "148": {
+    "0": {
+      "name": "minecraft:weighted_pressure_plate",
       "properties": {}
     }
   },
@@ -602,8 +1052,32 @@
       "properties": {}
     }
   },
+  "152": {
+    "0": {
+      "name": "minecraft:redstone_block",
+      "properties": {}
+    }
+  },
+  "154": {
+    "0": {
+      "name": "minecraft:hopper",
+      "properties": {}
+    }
+  },
   "155": {
     "0": {
+      "name": "minecraft:quartz_block",
+      "properties": {}
+    },
+    "1": {
+      "name": "minecraft:chiseled_quartz_block",
+      "properties": {}
+    },
+    "2": {
+      "name": "minecraft:pillar_quartz_block",
+      "properties": {}
+    },
+    "3": {
       "name": "minecraft:quartz_block",
       "properties": {}
     }
@@ -612,29 +1086,81 @@
     "0": {
       "name": "minecraft:quartz_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:quartz_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:quartz_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "south",
+        "half": "bottom"
       }
     },
     "3": {
       "name": "minecraft:quartz_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "north",
+        "half": "bottom"
+      }
+    },
+    "4": {
+      "name": "minecraft:quartz_stairs",
+      "properties": {
+        "facing": "east",
+        "half": "top"
+      }
+    },
+    "5": {
+      "name": "minecraft:quartz_stairs",
+      "properties": {
+        "facing": "west",
+        "type": "top"
+      }
+    },
+    "6": {
+      "name": "minecraft:quartz_stairs",
+      "properties": {
+        "facing": "north",
+        "type": "top"
+      }
+    },
+    "7": {
+      "name": "minecraft:quartz_stairs",
+      "properties": {
+        "facing": "south",
+        "type": "top"
       }
     }
   },
   "159": {
+    "13": {
+      "name": "minecraft:green_terracotta",
+      "properties": {}
+    },
+    "14": {
+      "name": "minecraft:red_terracotta",
+      "properties": {}
+    },
+    "15": {
+      "name": "minecraft:black_terracotta",
+      "properties": {}
+    },
+    "3": {
+      "name": "minecraft:light_blue_terracotta",
+      "properties": {}
+    },
+    "7": {
+      "name": "minecraft:gray_terracotta",
+      "properties": {}
+    },
     "9": {
       "name": "minecraft:cyan_terracotta",
       "properties": {}
@@ -655,7 +1181,9 @@
     },
     "1": {
       "name": "minecraft:spruce_log",
-      "properties": {}
+      "properties": {
+        "axis": "y"
+      }
     },
     "11": {
       "name": "minecraft:jungle_log",
@@ -664,29 +1192,43 @@
       }
     },
     "2": {
-      "name": "minecraft:oak_log",
-      "properties": {
-        "axis": "z"
-      }
-    },
-    "3": {
-      "name": "minecraft:junge_log",
-      "properties": {}
-    },
-    "4": {
-      "name": "minecraft:spruce_log",
+      "name": "minecraft:birch_log",
       "properties": {
         "axis": "y"
       }
     },
+    "3": {
+      "name": "minecraft:jungle_log",
+      "properties": {
+        "axis": "y"
+      }
+    },
+    "4": {
+      "name": "minecraft:oak_log",
+      "properties": {
+        "axis": "x"
+      }
+    },
+    "5": {
+      "name": "minecraft:spruce_log",
+      "properties": {
+        "axis": "x"
+      }
+    },
     "7": {
-      "name": "minecraft:birch_log",
+      "name": "minecraft:jungle_log",
       "properties": {
         "axis": "x"
       }
     },
     "8": {
-      "name": "minecraft:birch_log",
+      "name": "minecraft:oak_log",
+      "properties": {
+        "axis": "z"
+      }
+    },
+    "9": {
+      "name": "minecraft:spruce_log",
       "properties": {
         "axis": "z"
       }
@@ -695,12 +1237,14 @@
   "170": {
     "0": {
       "name": "minecraft:hay_block",
-      "properties": {}
+      "properties": {
+        "axis": "y"
+      }
     },
     "4": {
       "name": "minecraft:hay_block",
       "properties": {
-        "facing": "west"
+        "axis": "x"
       }
     },
     "8": {
@@ -708,6 +1252,32 @@
       "properties": {
         "axis": "z"
       }
+    }
+  },
+  "171": {
+    "0": {
+      "name": "minecraft:white_carpet",
+      "properties": {}
+    },
+    "11": {
+      "name": "minecraft:blue_carpet",
+      "properties": {}
+    },
+    "12": {
+      "name": "minecraft:brown_carpet",
+      "properties": {}
+    },
+    "14": {
+      "name": "minecraft:red_carpet",
+      "properties": {}
+    },
+    "3": {
+      "name": "minecraft:light_blue_carpet",
+      "properties": {}
+    },
+    "7": {
+      "name": "minecraft:gray_carpet",
+      "properties": {}
     }
   },
   "18": {
@@ -719,10 +1289,12 @@
     },
     "1": {
       "name": "minecraft:spruce_leaves",
-      "properties": {}
+      "properties": {
+        "persistent": "true"
+      }
     },
     "10": {
-      "name": "minecraft:spruce_leaves",
+      "name": "minecraft:oak_leaves",
       "properties": {
         "persistent": "true"
       }
@@ -730,25 +1302,25 @@
     "12": {
       "name": "minecraft:spruce_leaves",
       "properties": {
-        "persisten": "true"
-      }
-    },
-    "13": {
-      "name": "minecraft:spruce_leaves",
-      "properties": {
         "persistent": "true"
       }
     },
-    "14": {
+    "13": {
       "name": "minecraft:birch_leaves",
       "properties": {
         "persistent": "true"
       }
     },
-    "15": {
+    "14": {
       "name": "minecraft:jungle_leaves",
       "properties": {
-        "persisten": "true"
+        "persistent": "true"
+      }
+    },
+    "15": {
+      "name": "minecraft:birch_leaves",
+      "properties": {
+        "persistent": "true"
       }
     },
     "2": {
@@ -764,13 +1336,13 @@
       }
     },
     "5": {
-      "name": "minecraft:acacia_leaves",
+      "name": "minecraft:birch_leaves",
       "properties": {
         "persistent": "true"
       }
     },
     "6": {
-      "name": "minecraft:oak_leaves",
+      "name": "minecraft:jungle_leaves",
       "properties": {
         "persistent": "true"
       }
@@ -782,7 +1354,7 @@
       }
     },
     "9": {
-      "name": "minecraft:spruce_leaves",
+      "name": "minecraft:oak_leaves",
       "properties": {
         "persistent": "true"
       }
@@ -796,7 +1368,7 @@
   },
   "195": {
     "9": {
-      "name": "minecraft:jungle_door",
+      "name": "minecraft:placeholder",
       "properties": {}
     }
   },
@@ -814,10 +1386,18 @@
   },
   "204": {
     "0": {
-      "name": "minecraft:purpur_slab",
-      "properties": {
-        "type": "double"
-      }
+      "name": "minecraft:purpur_block",
+      "properties": {}
+    }
+  },
+  "209": {
+    "12": {
+      "name": "minecraft:end_gateway",
+      "properties": {}
+    },
+    "8": {
+      "name": "minecraft:end_gateway",
+      "properties": {}
     }
   },
   "21": {
@@ -830,11 +1410,15 @@
     "0": {
       "name": "minecraft:chain_command_block",
       "properties": {}
+    },
+    "12": {
+      "name": "minecraft:chain_command_block",
+      "properties": {}
     }
   },
   "212": {
     "0": {
-      "name": "minecraft:frosted_ice",
+      "name": "minecraft:blue_ice",
       "properties": {}
     }
   },
@@ -860,13 +1444,13 @@
     "2": {
       "name": "minecraft:dispenser",
       "properties": {
-        "facing": "south"
+        "facing": "north"
       }
     },
     "4": {
       "name": "minecraft:dispenser",
       "properties": {
-        "facing": "south"
+        "facing": "east"
       }
     }
   },
@@ -880,7 +1464,7 @@
       "properties": {}
     },
     "2": {
-      "name": "minecraft:cut_sandstone",
+      "name": "minecraft:smooth_sandstone",
       "properties": {}
     }
   },
@@ -894,57 +1478,57 @@
     "0": {
       "name": "minecraft:red_bed",
       "properties": {
-        "facing": "north",
-        "part": "head"
+        "facing": "south",
+        "part": "foot"
       }
     },
     "1": {
       "name": "minecraft:red_bed",
       "properties": {
-        "facing": "north",
-        "part": "head"
+        "facing": "west",
+        "part": "foot"
       }
     },
     "10": {
       "name": "minecraft:red_bed",
       "properties": {
-        "facing": "south",
-        "part": "foot"
+        "facing": "north",
+        "part": "head"
       }
     },
     "11": {
       "name": "minecraft:red_bed",
       "properties": {
+        "facing": "east",
+        "part": "head"
+      }
+    },
+    "2": {
+      "name": "minecraft:red_bed",
+      "properties": {
         "facing": "north",
         "part": "foot"
       }
     },
-    "2": {
+    "3": {
+      "name": "minecraft:red_bed",
+      "properties": {
+        "facing": "east",
+        "part": "foot"
+      }
+    },
+    "8": {
       "name": "minecraft:red_bed",
       "properties": {
         "facing": "south",
         "part": "head"
       }
     },
-    "3": {
-      "name": "facing",
-      "properties": {
-        "facing": "north",
-        "part": "head"
-      }
-    },
-    "8": {
-      "name": "minecraft:red_bed",
-      "properties": {
-        "facing": "north",
-        "part": "foot"
-      }
-    },
     "9": {
       "name": "minecraft:red_bed",
       "properties": {
-        "facing": "east",
-        "part": "foot"
+        "facing": "west",
+        "part": "head"
       }
     }
   },
@@ -954,10 +1538,8 @@
       "properties": {}
     },
     "1": {
-      "name": "minecraft:powerered_rail",
-      "properties": {
-        "shape": "north_south"
-      }
+      "name": "minecraft:powered_rail",
+      "properties": {}
     },
     "2": {
       "name": "minecraft:powered_rail",
@@ -974,16 +1556,26 @@
   },
   "28": {
     "0": {
-      "name": "",
-      "properties": {
-        "minecraft:detector_rail": ""
-      }
+      "name": "minecraft:detector_rail",
+      "properties": {}
     },
     "1": {
       "name": "minecraft:detector_rail",
-      "properties": {
-        "shape": "north_south"
-      }
+      "properties": {}
+    }
+  },
+  "29": {
+    "1": {
+      "name": "minecraft:sticky_piston",
+      "properties": {}
+    },
+    "10": {
+      "name": "minecraft:sticky_piston",
+      "properties": {}
+    },
+    "12": {
+      "name": "minecraft:sticky_piston",
+      "properties": {}
     }
   },
   "3": {
@@ -1000,7 +1592,7 @@
   },
   "31": {
     "1": {
-      "name": "minecraft:tall_grass",
+      "name": "minecraft:dead_bush",
       "properties": {}
     },
     "2": {
@@ -1008,13 +1600,43 @@
       "properties": {}
     }
   },
+  "32": {
+    "0": {
+      "name": "minecraft:dead_bush",
+      "properties": {}
+    }
+  },
   "3215": {
     "0": {
-      "name": "minecraft:bedrock",
+      "name": "ireallydontkknowwhichblockthisis",
+      "properties": {}
+    },
+    "1": {
+      "name": "whatlbockisthis?",
+      "properties": {}
+    },
+    "2": {
+      "name": "whatblock?",
       "properties": {}
     },
     "3": {
-      "name": "minecraft:bedrock",
+      "name": "istilldontknowwhichblockthisis",
+      "properties": {}
+    },
+    "4": {
+      "name": "whichblockisthis",
+      "properties": {}
+    },
+    "5": {
+      "name": "?????",
+      "properties": {}
+    },
+    "6": {
+      "name": "??????",
+      "properties": {}
+    },
+    "7": {
+      "name": "whatblocK?",
       "properties": {}
     }
   },
@@ -1030,9 +1652,25 @@
     "13": {
       "name": "minecraft:piston",
       "properties": {}
+    },
+    "8": {
+      "name": "minecraft:piston",
+      "properties": {}
     }
   },
   "34": {
+    "0": {
+      "name": "minecraft:piston_head",
+      "properties": {}
+    },
+    "10": {
+      "name": "minecraft:piston_head",
+      "properties": {}
+    },
+    "12": {
+      "name": "minecraft:piston_head",
+      "properties": {}
+    },
     "4": {
       "name": "minecraft:piston_head",
       "properties": {}
@@ -1152,12 +1790,18 @@
   },
   "43": {
     "0": {
-      "name": "minecraftsmooth_stone",
-      "properties": {}
+      "name": "minecraft:smooth_stone_slab",
+      "properties": {
+        "type": "double",
+        "waterlogged": "false"
+      }
     },
     "1": {
-      "name": "minecraft:smooth_sandstone",
-      "properties": {}
+      "name": "minecraft:sandstone_slab",
+      "properties": {
+        "type": "double",
+        "waterlogged": "false"
+      }
     },
     "2": {
       "name": "minecraft:oak_slab",
@@ -1184,7 +1828,13 @@
       }
     },
     "6": {
-      "name": "minecraft:nether_brick_slab",
+      "name": "minecraft:netherbrick_slab",
+      "properties": {
+        "type": "double"
+      }
+    },
+    "7": {
+      "name": "minecraft:quartz_slab",
       "properties": {
         "type": "double"
       }
@@ -1192,73 +1842,81 @@
   },
   "44": {
     "0": {
-      "name": "minecraft:stone_slab",
-      "properties": {}
+      "name": "minecraft:smooth_stone_slab",
+      "properties": {
+        "type": "bottom",
+        "waterlogged": "false"
+      }
     },
     "1": {
       "name": "minecraft:sandstone_slab",
-      "properties": {}
+      "properties": {
+        "type": "bottom",
+        "waterlogged": "false"
+      }
     },
     "10": {
-      "name": "minecraft_oak_slab",
-      "properties": {
-        "type": "top"
-      }
+      "name": "minecraft:stone_slab",
+      "properties": {}
     },
     "11": {
-      "name": "minecraft:cobblestone_slab",
-      "properties": {
-        "type": "top"
-      }
+      "name": "minecraft:stone_slab",
+      "properties": {}
     },
     "13": {
-      "name": "minecraft:brick_slab",
-      "properties": {
-        "type": "top"
-      }
+      "name": "minecraft:stone_slab",
+      "properties": {}
     },
     "15": {
-      "name": "minecraft:quartz_slab",
-      "properties": {
-        "half": "top"
-      }
+      "name": "minecraft:stone_slab",
+      "properties": {}
     },
     "2": {
       "name": "minecraft:oak_slab",
-      "properties": {}
+      "properties": {
+        "type": "bottom"
+      }
     },
     "3": {
       "name": "minecraft:cobblestone_slab",
-      "properties": {}
+      "properties": {
+        "type": "bottom"
+      }
     },
     "4": {
       "name": "minecraft:brick_slab",
-      "properties": {}
+      "properties": {
+        "type": "bottom"
+      }
     },
     "5": {
-      "name": "minecraft:stone_brick_slab",
-      "properties": {}
+      "name": "minecraft:stonebrick_slab",
+      "properties": {
+        "type": "bottom"
+      }
     },
     "6": {
-      "name": "minecraft:nether_brick_slab",
+      "name": "minecraft:brick_slab",
+      "properties": {}
+    },
+    "7": {
+      "name": "minecraft:quartz_slab",
       "properties": {}
     },
     "8": {
-      "name": "minecraft:stone_slab",
-      "properties": {
-        "type": "top"
-      }
+      "name": "minecraft:slab",
+      "properties": {}
     },
     "9": {
-      "name": "minecraft:sandstone_slab",
+      "name": "minecraft:oak_slab",
       "properties": {
-        "half": "top"
+        "type": "top"
       }
     }
   },
   "45": {
     "0": {
-      "name": "minecraft:bricks",
+      "name": "minecraft:brick_block",
       "properties": {}
     }
   },
@@ -1312,25 +1970,25 @@
     "1": {
       "name": "minecraft:wall_torch",
       "properties": {
-        "facing": "north"
+        "facing": "east"
       }
     },
     "2": {
       "name": "minecraft:wall_torch",
       "properties": {
-        "facing": "east"
+        "facing": "west"
       }
     },
     "3": {
       "name": "minecraft:wall_torch",
       "properties": {
-        "facing": "south"
+        "facing": "north"
       }
     },
     "4": {
       "name": "minecraft:wall_torch",
       "properties": {
-        "facing": "west"
+        "facing": "south"
       }
     },
     "5": {
@@ -1341,9 +1999,7 @@
   "51": {
     "10": {
       "name": "minecraft:fire",
-      "properties": {
-        "age": "10"
-      }
+      "properties": {}
     },
     "15": {
       "name": "minecraft:fire",
@@ -1354,38 +2010,42 @@
     "0": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "south",
+        "half": "bottom"
       }
     },
     "3": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "north",
+        "half": "bottom"
       }
     },
     "4": {
-      "name": "minecraft:oak_stairs",
+      "name": "minecraft:oak_wood_stairs",
       "properties": {
-        "facing": "north",
+        "facing": "east",
         "half": "top"
       }
     },
     "5": {
-      "name": "minecraft:stairs",
+      "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "east",
+        "facing": "west",
         "half": "top"
       }
     },
@@ -1393,18 +2053,24 @@
       "name": "minecraft:oak_stairs",
       "properties": {
         "facing": "south",
-        "type": "top"
+        "half": "top"
       }
     },
     "7": {
       "name": "minecraft:oak_stairs",
       "properties": {
-        "facing": "west",
+        "facing": "north",
         "half": "top"
       }
     }
   },
   "54": {
+    "0": {
+      "name": "minecraft:chest",
+      "properties": {
+        "facing": "south"
+      }
+    },
     "2": {
       "name": "minecraft:chest",
       "properties": {
@@ -1414,73 +2080,73 @@
     "3": {
       "name": "minecraft:chest",
       "properties": {
-        "facing": "west"
+        "facing": "south"
       }
     },
     "4": {
       "name": "minecraft:chest",
       "properties": {
-        "facing": "north"
+        "facing": "south"
       }
     },
     "5": {
       "name": "minecraft:chest",
       "properties": {
-        "facing": "east"
+        "facing": "south"
       }
     }
   },
   "55": {
     "0": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "10": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "11": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "12": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "13": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "14": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "15": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "4": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "5": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "6": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "7": {
-      "name": "minecraft:redstone",
+      "name": "minecrraft:redstone_wire",
       "properties": {}
     },
     "8": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     },
     "9": {
-      "name": "minecraft:redstone",
+      "name": "minecraft:redstone_wire",
       "properties": {}
     }
   },
@@ -1504,59 +2170,53 @@
   },
   "59": {
     "0": {
-      "name": "minecraft:wheat_seeds",
+      "name": "minecraft:wheat",
       "properties": {}
     },
     "1": {
-      "name": "minecraft:wheat_seeds",
-      "properties": {
-        "growth": "1"
-      }
+      "name": "minecraft:wheat",
+      "properties": {}
     },
     "2": {
-      "name": "minecraft:wheat_seeds",
-      "properties": {
-        "growth": "2"
-      }
+      "name": "minecraft:wheat",
+      "properties": {}
     },
     "3": {
-      "name": "minecraft:wheat_seeds",
-      "properties": {
-        "growth": "3"
-      }
+      "name": "minecraft:wheat",
+      "properties": {}
     },
     "4": {
-      "name": "minecraft:wheat_seeds",
-      "properties": {
-        "growth": "4"
-      }
+      "name": "minecraft:wheat",
+      "properties": {}
     },
     "5": {
-      "name": "minecraft:wheat_seeds",
-      "properties": {
-        "growth": "7"
-      }
+      "name": "minecraft:wheat",
+      "properties": {}
     },
     "6": {
-      "name": "minecraft:wheat_seeds",
-      "properties": {
-        "growth": "6"
-      }
+      "name": "minecraft:wheat",
+      "properties": {}
     },
     "7": {
-      "name": "minecraft:wheat_seeds",
-      "properties": {
-        "age": "7"
-      }
+      "name": "minecraft:wheat",
+      "properties": {}
     }
   },
   "6": {
+    "0": {
+      "name": "minecraft:oak_sapling",
+      "properties": {}
+    },
     "10": {
-      "name": "minecraft:dark_oak_sapling",
+      "name": "minecraft:oak_saplin",
       "properties": {}
     },
     "2": {
       "name": "minecraft:birch_sapling",
+      "properties": {}
+    },
+    "8": {
+      "name": "minecraft:oak_sapling",
       "properties": {}
     }
   },
@@ -1570,7 +2230,7 @@
     "7": {
       "name": "minecraft:farmland",
       "properties": {
-        "moisture": "7"
+        "moisture": 7
       }
     }
   },
@@ -1578,25 +2238,29 @@
     "2": {
       "name": "minecraft:furnace",
       "properties": {
-        "facing": "south"
+        "facing": "east",
+        "lit": "true"
       }
     },
     "3": {
       "name": "minecraft:furnace",
       "properties": {
-        "facing": "west"
+        "facing": "north",
+        "lit": "true"
       }
     },
     "4": {
       "name": "minecraft:furnace",
       "properties": {
-        "facing": "north"
+        "facing": "north",
+        "lit": "true"
       }
     },
     "5": {
       "name": "minecraft:furnace",
       "properties": {
-        "facing": "east"
+        "facing": "north",
+        "lit": "true"
       }
     }
   },
@@ -1610,14 +2274,12 @@
     "4": {
       "name": "minecraft:furnace",
       "properties": {
-        "facing": "north",
         "lit": "true"
       }
     },
     "5": {
       "name": "minecraft:furnace",
       "properties": {
-        "facing": "east",
         "lit": "true"
       }
     }
@@ -1625,174 +2287,186 @@
   "63": {
     "1": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "1"
-      }
+      "properties": {}
+    },
+    "10": {
+      "name": "minecraft:sign",
+      "properties": {}
+    },
+    "11": {
+      "name": "minecraft:sign",
+      "properties": {}
     },
     "12": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "12"
-      }
+      "properties": {}
+    },
+    "13": {
+      "name": "minecraft:sign",
+      "properties": {}
     },
     "2": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "2"
-      }
+      "properties": {}
     },
     "3": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "3"
-      }
+      "properties": {}
     },
     "5": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "5"
-      }
+      "properties": {}
     },
     "9": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "9"
-      }
+      "properties": {}
     }
   },
   "64": {
     "0": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "north",
-        "hinge": "left",
+        "facing": "east",
         "half": "lower",
-		"open": "false",
-		"powered": "false"
+        "hinge": "right",
+        "open": "false"
       }
     },
     "1": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "east",
-        "hinge": "left",
+        "facing": "south",
         "half": "lower",
-		"open": "false",
-		"powered": "false"
+        "hinge": "right",
+        "open": "false"
       }
     },
     "10": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "north",
+        "facing": "east",
+        "half": "upper",
         "hinge": "left",
-        "half": "lower"
+        "open": "false",
+        "powered": "true"
       }
     },
     "11": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "west",
+        "facing": "east",
         "half": "upper",
-        "hinge": "left",
-		"open": "false",
-		"powered": "false"
+        "hinge": "right",
+        "open": "false",
+        "powered": "true"
       }
     },
     "12": {
-      "name": "",
-      "properties": {}
+      "name": "minecraft:oak_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
     },
     "13": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "north",
+        "facing": "south",
+        "half": "upper",
         "hinge": "left",
-        "half": "lower",
-		"open": "false",
-		"powered": "false"
+        "open": "true"
       }
     },
     "14": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
     },
     "15": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "west",
-        "hinge": "right",
+        "facing": "north",
         "half": "upper",
-		"open": "false",
-		"powered": "false"
+        "hinge": "left",
+        "open": "true"
       }
     },
     "2": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "south",
-        "hinge": "left",
+        "facing": "west",
         "half": "lower",
-		"open": "false",
-		"powered": "false"
+        "hinge": "right",
+        "open": "false"
       }
     },
     "3": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "west",
+        "facing": "north",
         "half": "lower",
-        "hinge": "left",
-		"open": "false",
-		"powered": "false"
+        "hinge": "right",
+        "open": "false"
       }
     },
     "4": {
-      "name": "",
-      "properties": {}
+      "name": "minecraft:oak_door",
+      "properties": {
+        "facing": "east",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "5": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "east",
-        "hinge": "left",
-        "half": "upper",
-		"open": "false",
-		"powered": "false"
+        "facing": "south",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
       }
     },
     "6": {
       "name": "minecraft:oak_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "7": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "west",
-        "hinge": "right",
+        "facing": "north",
         "half": "lower",
-		"open": "false",
-		"powered": "false"
+        "hinge": "right",
+        "open": "true"
       }
     },
     "8": {
       "name": "minecraft:oak_door",
       "properties": {
-        "facing": "north",
-        "hinge": "right",
-        "half": "lower",
-		"open": "false",
-		"powered": "false"
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false"
       }
     },
     "9": {
-      "name": "minecraft:door",
+      "name": "minecraft:oak_door",
       "properties": {
-        "facing": "south",
-        "hinge": "right",
+        "facing": "east",
         "half": "upper",
-		"open": "false",
-		"powered": "false"
+        "hinge": "right",
+        "open": "false"
       }
     }
   },
@@ -1800,7 +2474,8 @@
     "2": {
       "name": "minecraft:ladder",
       "properties": {
-        "facing": "north"
+        "facing": "north",
+        "waterlogged": "false"
       }
     },
     "3": {
@@ -1812,59 +2487,47 @@
     "4": {
       "name": "minecraft:ladder",
       "properties": {
-        "facing": "north"
+        "facing": "east"
       }
     },
     "5": {
       "name": "minecraft:ladder",
       "properties": {
-        "facing": "east"
+        "facing": "west"
       }
     }
   },
   "66": {
     "0": {
-      "name": "minecraft:rail",
-      "properties": {
-        "shape": "east_west"
-      }
+      "name": "minecraft:oak_door",
+      "properties": {}
     },
     "1": {
       "name": "minecraft:rail",
-      "properties": {
-        "shape": "east_west"
-      }
+      "properties": {}
     },
     "2": {
-      "name": "minecraft:rail",
-      "properties": {
-        "shape": "north_south"
-      }
+      "name": "minecraft:oak_door",
+      "properties": {}
     },
     "3": {
-      "name": "minecraft:rail",
-      "properties": {
-        "shape": "north_west"
-      }
+      "name": "minecraft:oak_door",
+      "properties": {}
     },
     "6": {
-      "name": "minecraft:rail",
+      "name": "minecraft:oak_door",
       "properties": {}
     },
     "7": {
-      "name": "minecraft:rail",
-      "properties": {
-        "shap": "ascending_north"
-      }
+      "name": "minecraft:oak_door",
+      "properties": {}
     },
     "8": {
-      "name": "minecraft:rail",
-      "properties": {
-        "shape": "ascending_south"
-      }
+      "name": "minecraft:oak_door",
+      "properties": {}
     },
     "9": {
-      "name": "minecraft:rail",
+      "name": "minecraft:oak_door",
       "properties": {}
     }
   },
@@ -1872,38 +2535,42 @@
     "0": {
       "name": "minecraft:cobblestone_stairs",
       "properties": {
-        "facing": "north"
+        "facing": "east",
+        "half": "bottom"
       }
     },
     "1": {
       "name": "minecraft:cobblestone_stairs",
       "properties": {
-        "facing": "east"
+        "facing": "west",
+        "half": "bottom"
       }
     },
     "2": {
       "name": "minecraft:cobblestone_stairs",
       "properties": {
-        "facing": "south"
+        "facing": "south",
+        "half": "bottom"
       }
     },
     "3": {
       "name": "minecraft:cobblestone_stairs",
       "properties": {
-        "facing": "west"
+        "facing": "north",
+        "half": "bottom"
       }
     },
     "4": {
       "name": "minecraft:cobblestone_stairs",
       "properties": {
-        "facing": "north",
+        "facing": "east",
         "half": "top"
       }
     },
     "5": {
       "name": "minecraft:cobblestone_stairs",
       "properties": {
-        "facing": "east",
+        "facing": "west",
         "half": "top"
       }
     },
@@ -1917,7 +2584,7 @@
     "7": {
       "name": "minecraft:cobblestone_stairs",
       "properties": {
-        "facing": "west",
+        "facing": "north",
         "half": "top"
       }
     }
@@ -1925,25 +2592,19 @@
   "68": {
     "2": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "2"
-      }
+      "properties": {}
     },
     "3": {
-      "name": "minecraft:pumpkin",
+      "name": "minecraft:wall_sign",
       "properties": {}
     },
     "4": {
       "name": "minecraft:sign",
-      "properties": {
-        "rotation": "4"
-      }
+      "properties": {}
     },
     "5": {
-      "name": "minecraft:sign",
-      "properties": {
-        "rotation": "5"
-      }
+      "name": "minecraft:wall_sign",
+      "properties": {}
     }
   },
   "69": {
@@ -1951,16 +2612,62 @@
       "name": "minecraft:lever",
       "properties": {}
     },
+    "10": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "11": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
     "12": {
       "name": "minecraft:lever",
-      "properties": {
-        "face": "wall",
-        "facing": "north",
-        "powered": "false"
-      }
+      "properties": {}
+    },
+    "13": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "14": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "15": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "2": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "3": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "4": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "5": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "6": {
+      "name": "minecraft:lever",
+      "properties": {}
+    },
+    "8": {
+      "name": "minecraft:lever",
+      "properties": {}
     },
     "9": {
       "name": "minecraft:lever",
+      "properties": {}
+    }
+  },
+  "7": {
+    "0": {
+      "name": "minecraft:bedrock",
       "properties": {}
     }
   },
@@ -1974,40 +2681,156 @@
     "0": {
       "name": "minecraft:iron_door",
       "properties": {
-        "facing": "north",
-        "hinge": "left",
-        "level": "bottom"
+        "facing": "east",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
       }
     },
     "1": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "south",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
+    },
+    "10": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false",
+        "powered": "true"
+      }
+    },
+    "11": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false",
+        "powered": "true"
+      }
+    },
+    "12": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "13": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "south",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "14": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
+    },
+    "15": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "north",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true"
+      }
     },
     "2": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
     },
     "3": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "north",
+        "half": "lower",
+        "hinge": "right",
+        "open": "false"
+      }
+    },
+    "4": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
+    },
+    "5": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "south",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "6": {
       "name": "minecraft:iron_door",
-      "properties": {}
+      "properties": {
+        "facing": "west",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
+    },
+    "7": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "north",
+        "half": "lower",
+        "hinge": "right",
+        "open": "true"
+      }
     },
     "8": {
       "name": "minecraft:iron_door",
       "properties": {
-        "facing": "north",
+        "facing": "east",
+        "half": "upper",
         "hinge": "left",
-        "level": "top"
+        "open": "false"
+      }
+    },
+    "9": {
+      "name": "minecraft:iron_door",
+      "properties": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false"
       }
     }
   },
   "72": {
     "0": {
       "name": "minecraft:oak_pressure_plate",
-      "properties": {}
+      "properties": {
+        "powered": "false"
+      }
     }
   },
   "73": {
@@ -2019,62 +2842,45 @@
   "75": {
     "1": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "lit": "false"
-      }
+      "properties": {}
     },
     "2": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "lit": "false"
-      }
+      "properties": {}
     },
     "3": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "facing": "west"
-      }
+      "properties": {}
+    },
+    "4": {
+      "name": "minecraft:redstone_torch",
+      "properties": {}
     },
     "5": {
-      "name": "minecraft:redstone_torch",
+      "name": "miencraft:redstone_torch",
       "properties": {}
     }
   },
   "76": {
     "1": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "facing": "east",
-        "lit": "true"
-      }
+      "properties": {}
     },
     "2": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "facing": "south",
-        "lit": "true"
-      }
+      "properties": {}
     },
     "3": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "facing": "west",
-        "lit": "true"
-      }
+      "properties": {}
     },
     "4": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "facing": "north",
-        "lit": "true"
-      }
+      "properties": {}
     },
     "5": {
       "name": "minecraft:redstone_torch",
-      "properties": {
-        "facing": "east",
-        "lit": "true"
-      }
+      "properties": {}
     }
   },
   "77": {
@@ -2082,25 +2888,23 @@
       "name": "minecraft:stone_button",
       "properties": {}
     },
+    "2": {
+      "name": "minecraft:stone_button",
+      "properties": {}
+    },
     "3": {
-      "name": "minecraft:stone_buttom",
-      "properties": {
-        "facing": "west"
-      }
+      "name": "minecraft:stone_button",
+      "properties": {}
     },
     "4": {
-      "name": "minecraft:stone_buttom",
-      "properties": {
-        "facing": "top"
-      }
+      "name": "minecraft:stone_button",
+      "properties": {}
     }
   },
   "78": {
     "0": {
-      "name": "minecraft:snow",
-      "properties": {
-        "layers": "1"
-      }
+      "name": "minecraft:snow_block",
+      "properties": {}
     }
   },
   "79": {
@@ -2122,33 +2926,23 @@
     },
     "10": {
       "name": "minecraft:cactus",
-      "properties": {
-        "age": "10"
-      }
+      "properties": {}
     },
     "6": {
-      "name": "minecraft:cactus",
-      "properties": {
-        "age": "6"
-      }
+      "name": "mincraft:cactus",
+      "properties": {}
     },
     "7": {
       "name": "minecraft:cactus",
-      "properties": {
-        "age": "7"
-      }
+      "properties": {}
     },
     "8": {
       "name": "minecraft:cactus",
-      "properties": {
-        "age": "8"
-      }
+      "properties": {}
     },
     "9": {
       "name": "minecraft:cactus",
-      "properties": {
-        "age": "9"
-      }
+      "properties": {}
     }
   },
   "82": {
@@ -2161,10 +2955,42 @@
     "0": {
       "name": "minecraft:sugar_cane",
       "properties": {}
+    },
+    "10": {
+      "name": "minecraft:reeds",
+      "properties": {}
+    },
+    "12": {
+      "name": "minecraft:reeds",
+      "properties": {}
+    },
+    "14": {
+      "name": "minecraft:reeds",
+      "properties": {}
+    },
+    "15": {
+      "name": "minecraft:reeds",
+      "properties": {}
+    },
+    "4": {
+      "name": "minecraft:reeds",
+      "properties": {}
+    },
+    "6": {
+      "name": "minecraft:reeds",
+      "properties": {}
+    },
+    "8": {
+      "name": "minecraft:reeds",
+      "properties": {}
     }
   },
   "84": {
     "0": {
+      "name": "minecraft:jukebox",
+      "properties": {}
+    },
+    "1": {
       "name": "minecraft:jukebox",
       "properties": {}
     }
@@ -2177,15 +3003,15 @@
   },
   "86": {
     "0": {
-      "name": "minecraft:pumpkin",
+      "name": "minecraft:carved_pumpkin",
       "properties": {}
     },
     "1": {
-      "name": "minecraft:pumpkin",
+      "name": "minecraft:carved_pumpkin",
       "properties": {}
     },
     "2": {
-      "name": "minecraft:pumpkin",
+      "name": "minecraft:carved_pumpkin",
       "properties": {}
     },
     "3": {
@@ -2214,98 +3040,147 @@
   "9": {
     "0": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "level": "0"
+      }
     },
     "1": {
-      "name": "minecraft:lava",
-      "properties": {}
+      "name": "minecraft:water",
+      "properties": {
+        "level": "7"
+      }
     },
     "10": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "level": "8"
+      }
     },
     "2": {
-      "name": "minecraft:water",
-      "properties": {}
+      "name": "miencraft:water",
+      "properties": {
+        "level": "6"
+      }
     },
     "3": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "level": "5"
+      }
     },
     "4": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "level": "4"
+      }
     },
     "5": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "level": "3"
+      }
     },
     "6": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "level": "2"
+      }
     },
     "7": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "level": "1"
+      }
     },
     "8": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "falling": "true",
+        "level": "8"
+      }
     },
     "9": {
       "name": "minecraft:water",
-      "properties": {}
+      "properties": {
+        "falling": "true",
+        "level": "8"
+      }
     }
   },
   "91": {
     "0": {
-      "name": "minecraft:jack_o_lantern",
+      "name": "minecraft:lit_pumpkin",
       "properties": {}
     },
     "1": {
-      "name": "minecraft:jack_o_lantern",
+      "name": "minecraft:lit_pumpkin",
+      "properties": {}
+    },
+    "3": {
+      "name": "minecraft:lit_pumpkin",
       "properties": {}
     }
   },
   "92": {
     "0": {
       "name": "minecraft:cake",
-      "properties": {
-        "bites": "0"
-      }
+      "properties": {}
     },
     "1": {
       "name": "minecraft:cake",
-      "properties": {
-        "bites": "1"
-      }
+      "properties": {}
     }
   },
   "93": {
+    "0": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
+    },
+    "1": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
+    },
     "12": {
       "name": "minecraft:redstone_repeater",
-      "properties": {
-        "delay": "4",
-        "facing": "north",
-        "locked": "true"
-      }
+      "properties": {}
+    },
+    "14": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
     },
     "15": {
       "name": "minecraft:redstone_repeater",
-      "properties": {
-        "delay": "4",
-        "facing": "west",
-        "locked": "true"
-      }
+      "properties": {}
+    },
+    "2": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
+    },
+    "3": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
+    },
+    "4": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
+    },
+    "6": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
     }
   },
   "94": {
+    "0": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
+    },
     "15": {
       "name": "minecraft:redstone_repeater",
-      "properties": {
-        "delay": "4",
-        "facing": "west"
-      }
+      "properties": {}
+    },
+    "3": {
+      "name": "minecraft:redstone_repeater",
+      "properties": {}
     }
   },
   "96": {
@@ -2315,55 +3190,64 @@
     },
     "1": {
       "name": "minecraft:oak_trapdoor",
-      "properties": {
-        "facing": "east"
-      }
+      "properties": {}
+    },
+    "12": {
+      "name": "minecraft:oak_trapdoor",
+      "properties": {}
+    },
+    "14": {
+      "name": "minecraft:wooden_trapdoor",
+      "properties": {}
+    },
+    "15": {
+      "name": "minecraft:wooden_trapdoor",
+      "properties": {}
     },
     "2": {
       "name": "minecraft:oak_trapdoor",
-      "properties": {
-        "facing": "south"
-      }
+      "properties": {}
     },
     "3": {
       "name": "minecraft:oak_trapdoor",
-      "properties": {
-        "facing": "west",
-        "half": "bottom"
-      }
+      "properties": {}
     },
     "4": {
       "name": "minecraft:oak_trapdoor",
       "properties": {
-        "facing": "north",
-        "half": "top"
+        "facing": "south",
+        "half": "bottom",
+        "open": "true"
       }
     },
     "5": {
       "name": "minecraft:oak_trapdoor",
-      "properties": {
-        "facing": "east",
-        "half": "top"
-      }
+      "properties": {}
     },
     "6": {
       "name": "minecraft:oak_trapdoor",
-      "properties": {
-        "facing": "south",
-        "half": "top"
-      }
+      "properties": {}
     },
     "7": {
       "name": "minecraft:oak_trapdoor",
-      "properties": {
-        "facing": "west",
-        "half": "top"
-      }
+      "properties": {}
+    },
+    "8": {
+      "name": "minecraft:oak_trapdoor",
+      "properties": {}
+    },
+    "9": {
+      "name": "minecraft:oak_trapdoor",
+      "properties": {}
     }
   },
   "97": {
     "0": {
       "name": "minecraft:monster_egg",
+      "properties": {}
+    },
+    "2": {
+      "name": "minecraft:stone_brick_monster_egg",
       "properties": {}
     }
   },
@@ -2373,65 +3257,128 @@
       "properties": {}
     },
     "1": {
-      "name": "minecraft:mossy_stone_bricks",
+      "name": "minecraft:mossy_stone_brick",
       "properties": {}
     },
     "2": {
-      "name": "minecraft:cracked_stone_brick",
+      "name": "minecraft:cracked_stonebrick",
       "properties": {}
     },
     "3": {
-      "name": "minecraft:chiseled_stone_bricks",
+      "name": "minecraft:chiseled_stonebrick",
       "properties": {}
     }
   },
   "99": {
     "1": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "true",
+        "south": "false",
+        "up": "true",
+        "west": "true"
+      }
     },
     "10": {
-      "name": "minecraft:brown_mushroom_block",
+      "name": "minecraft:mushroom_stem",
       "properties": {
-        "down": "true",
+        "down": "false",
         "east": "true",
         "north": "true",
         "south": "true",
         "up": "false",
-        "west": "false"
+        "west": "true"
       }
     },
     "2": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "true",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "3": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "true",
+        "north": "true",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "4": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "true",
+        "west": "true"
+      }
     },
     "5": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "6": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "true",
+        "north": "false",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+      }
     },
     "7": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "true",
+        "up": "true",
+        "west": "true"
+      }
     },
     "8": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "true",
+        "up": "true",
+        "west": "false"
+      }
     },
     "9": {
       "name": "minecraft:brown_mushroom_block",
-      "properties": {}
+      "properties": {
+        "down": "false",
+        "east": "true",
+        "north": "false",
+        "south": "true",
+        "up": "true",
+        "west": "false"
+      }
     }
   }
 }
