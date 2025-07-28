@@ -312,7 +312,7 @@ if not path.exists(f"./%s" % path_to_new_files):
 
 
 # ask for the typeid of the building
-typeid = int(input("What is the type id of the files in this folder? "))
+category = int(input("What is the category of the files in this folder? "))
 
 # show a messsage to say how many files have to be converted
 print("Converting " + str(len(files)) + " files")
@@ -327,5 +327,11 @@ for file in files:
     # show a message to convey how much progress the program has made
     print("Converting " + file + " (" + str(index) + "/" + str(len(files)) + ")")
     # create a nbt file for every one of the txt files
-    create_nbt_file(file, typeid, path_to_new_files)
+    if category == 1:
+        create_nbt_file(file, 10, path_to_new_files)
+    elif category == 4:
+        create_nbt_file(file, 11, path_to_new_files)
+    else:
+        typeid = int(input("what is the type id of this building "))
+        create_nbt_file(file, typeid, path_to_new_files)
 
